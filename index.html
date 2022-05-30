@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="body">
+    <header class="header body__header">
+      <img class="bg" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main body__main">
+      <section class="add">
+        <h3 class="title">Add Item</h3>
+          <div class="form">
+            <input class="input form__input" type="text">
+            <button class="btn form__btn">Add</button>
+          </div>
+      </section>
+      <section class="todo">
+        <h3 class="title">Todo</h3>
+        <ul class="list main__list">
+          <li class="list__item">
+            <input class="input list__checkbox" type="checkbox">
+            <label class="list__label">Pay Bills</label>
+            <input class="input list__input" type="text" >
+            <button class="btn list__btn-edit">Edit</button>
+            <button class="btn list__btn-delete"><img class="btn__img" src="./remove.svg" alt=""></button>
+          </li>
+          <li class="list__item list__item_edit">
+            <input class="input list__checkbox" type="checkbox">
+            <label class="list__label">Go Shopping</label>
+            <input class="input list__input" type="text" value="Go Shopping" >
+            <button class="btn list__btn-edit">Save</button>
+            <button class="btn list__btn-delete"><img class="btn__img" src="./remove.svg" alt=""></button>
+          </li>
+        </ul> 
+      </section>
+      <section class="completed">
+        <h3 class="title">Completed</h3>
+        <ul class="list main__list main__list_completed">
+          <li class="list__item">
+            <input class="input list__checkbox list__checkbox_checked" type="checkbox" checked>
+            <label class="list__label list__label_complited">See the Doctor</label>
+            <input class="input list__input" type="text" >
+            <button class="btn list__btn-edit">Edit</button>
+            <button class="btn list__btn-delete"><img class="btn__img" src="./remove.svg" alt=""></button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
